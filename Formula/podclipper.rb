@@ -5,8 +5,8 @@ class Podclipper < Formula
 
   desc "Turn podcast videos into vertical reels with captions"
   homepage "https://github.com/LoukikNaik/PodClipper"
-  url "https://files.pythonhosted.org/packages/4d/31/f2957d82cb093e4744517f642c051c5bb7138e0a846178b0704adf042fa4/podclipper-0.1.0.tar.gz"
-  sha256 "9b1d7be6a2dc86ba6af5ffa9a67e1d0e30cd9ad82cfdcd8858556ae0b8da65f5"
+  url "https://files.pythonhosted.org/packages/d7/7a/3c581307b84312664d9c4dffb642a740d52daf5eee680d39918207b5bcfb/podclipper-0.1.1.tar.gz"
+  sha256 "c347e3da5867651f684b7260fba2a76a15ed4e13f380c755c8d9b99dc1afa8c0"
   license "AGPL-3.0-only"
 
   preserve_rpath
@@ -249,8 +249,8 @@ class Podclipper < Formula
   end
 
   resource "litellm" do
-    url "https://files.pythonhosted.org/packages/2e/b1/fc43dfd69f08a328f4149d507ac03cd048d147b3577d9e5335adb400a719/litellm-1.104.2-cp310-abi3-macosx_11_0_arm64.whl", using: :nounzip
-    sha256 "b3c600700b677799a553f435a2a2b724c01516215acbac873d1b056570bc0a39"
+    url "https://files.pythonhosted.org/packages/42/6c/68ea0cb51e087f53bf5bcd48c4a9ed7b8e3b1204848048e481810089f95c/litellm-1.105.0-cp310-abi3-macosx_11_0_arm64.whl", using: :nounzip
+    sha256 "a3bcf7e54213f1f7af9798100f62cd88384adbaf443e5fa016565c0b268e4947"
   end
 
   resource "llvmlite" do
@@ -364,8 +364,8 @@ class Podclipper < Formula
   end
 
   resource "podclipper" do
-    url "https://files.pythonhosted.org/packages/a2/d4/173e7a81438e2e2aa4f6f6ceca7e4d64073a76debb2ae8b51f831ad0b3eb/podclipper-0.1.0-py3-none-any.whl", using: :nounzip
-    sha256 "9d75f20db44dd49102c89ff027148e14e8e609b4a4eb29a93ff7824e05a80648"
+    url "https://files.pythonhosted.org/packages/c9/d2/d6a29cc7b363bdb449e66c32fca92c571b049a98fe846948a597f0cec787/podclipper-0.1.1-py3-none-any.whl", using: :nounzip
+    sha256 "f016540e58236ef3a2781a0f77e26de3b0b4d22dc7cc10429901508199ec507e"
   end
 
   resource "polars" do
@@ -628,7 +628,7 @@ class Podclipper < Formula
       jsonschema==4.26.0 --hash=sha256:d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce
       jsonschema-specifications==2025.9.1 --hash=sha256:98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe
       kiwisolver==1.5.1 --hash=sha256:1798e83840c3f627246104c4d8a9639c60fa068adf9ce92b61791781fa8a68c1
-      litellm==1.104.2 --hash=sha256:b3c600700b677799a553f435a2a2b724c01516215acbac873d1b056570bc0a39
+      litellm==1.105.0 --hash=sha256:a3bcf7e54213f1f7af9798100f62cd88384adbaf443e5fa016565c0b268e4947
       llvmlite==0.50.0 --hash=sha256:55f50a6b7c0b8de88b05d6bc407d70a60486ce024013997dc97e202bd187c75b
       markdown-it-py==4.2.0 --hash=sha256:9f7ebbcd14fe59494226453aed97c1070d83f8d24b6fc3a3bcf9a38092641c4a
       markupsafe==3.0.4 --hash=sha256:0930db9bdc62d22944e10b066448bb65dc9abe9112880c7cab8da54db4284d5f
@@ -651,7 +651,7 @@ class Podclipper < Formula
       opencv-python==5.0.0.93 --hash=sha256:198a75138241810206a17c829dbcc40a7cb1841cda538ca86cbbfc6c7d95f898
       packaging==26.3 --hash=sha256:d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c
       pillow==12.3.0 --hash=sha256:ffd0c5368496f41b0944be820fcb7a838aa6e623d250b01acf2643939c3f99d7
-      podclipper==0.1.0 --hash=sha256:9d75f20db44dd49102c89ff027148e14e8e609b4a4eb29a93ff7824e05a80648
+      podclipper==0.1.1 --hash=sha256:f016540e58236ef3a2781a0f77e26de3b0b4d22dc7cc10429901508199ec507e
       polars==2.0.0 --hash=sha256:35d62f3541b7a6d4c360a2e2f07fccc0c2bcbd33b0ea51c83a25417a47a3f3ad
       polars-runtime-32==2.0.0 --hash=sha256:7012d8a0201bd95638545ce8f256c0efe2c5cab0f806eb043021dddde5a9498b
       propcache==0.5.4 --hash=sha256:87a3caecf8095e48dc72f84bfa42e23a848cf410cc9cc13031fba4869b706a21

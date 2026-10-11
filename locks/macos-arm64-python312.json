@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "platform": "macOS 14+ arm64",
   "python": "3.12",
   "wheels": [
@@ -275,9 +275,9 @@
     },
     {
       "name": "litellm",
-      "version": "1.104.2",
-      "url": "https://files.pythonhosted.org/packages/2e/b1/fc43dfd69f08a328f4149d507ac03cd048d147b3577d9e5335adb400a719/litellm-1.104.2-cp310-abi3-macosx_11_0_arm64.whl",
-      "sha256": "b3c600700b677799a553f435a2a2b724c01516215acbac873d1b056570bc0a39"
+      "version": "1.105.0",
+      "url": "https://files.pythonhosted.org/packages/42/6c/68ea0cb51e087f53bf5bcd48c4a9ed7b8e3b1204848048e481810089f95c/litellm-1.105.0-cp310-abi3-macosx_11_0_arm64.whl",
+      "sha256": "a3bcf7e54213f1f7af9798100f62cd88384adbaf443e5fa016565c0b268e4947"
     },
     {
       "name": "llvmlite",
@@ -413,9 +413,9 @@
     },
     {
       "name": "podclipper",
-      "version": "0.1.0",
-      "url": "https://files.pythonhosted.org/packages/a2/d4/173e7a81438e2e2aa4f6f6ceca7e4d64073a76debb2ae8b51f831ad0b3eb/podclipper-0.1.0-py3-none-any.whl",
-      "sha256": "9d75f20db44dd49102c89ff027148e14e8e609b4a4eb29a93ff7824e05a80648"
+      "version": "0.1.1",
+      "url": "https://files.pythonhosted.org/packages/c9/d2/d6a29cc7b363bdb449e66c32fca92c571b049a98fe846948a597f0cec787/podclipper-0.1.1-py3-none-any.whl",
+      "sha256": "f016540e58236ef3a2781a0f77e26de3b0b4d22dc7cc10429901508199ec507e"
     },
     {
       "name": "polars",

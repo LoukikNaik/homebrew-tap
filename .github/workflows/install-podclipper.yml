@@ -2,6 +2,11 @@ name: Install PodClipper
 
 on:
   workflow_dispatch:
+    inputs:
+      tests_ref:
+        description: "Optional PodClipper test ref; defaults to the installed release tag"
+        required: false
+        type: string
   push:
     paths:
       - Formula/**
@@ -45,12 +50,12 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: LoukikNaik/PodClipper
-          ref: ${{ steps.release.outputs.tag }}
+          ref: ${{ inputs.tests_ref || steps.release.outputs.tag }}
           path: release-source
       - name: Install pytest tools in the installed environment
         run: |
           "$(brew --prefix python@3.12)/bin/python3.12" -m pip --python="$(brew --prefix podclipper)/libexec/bin/python" install "pytest>=8" "pytest-mock>=3.12" "pytest-cov>=5"
-      - name: Run the release's pytest suite against the installed package
+      - name: Run pytest against the installed package
         working-directory: release-source
         env:
           PYTHONPATH: ""

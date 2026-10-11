@@ -5,8 +5,8 @@ class Podclipper < Formula
 
   desc "Turn podcast videos into vertical reels with captions"
   homepage "https://github.com/LoukikNaik/PodClipper"
-  url "https://files.pythonhosted.org/packages/4a/49/213298ef29d3946fff27ad18ee772f0fb5fd3cb6be22f09e1277c54aafd0/podclipper-0.1.2.tar.gz"
-  sha256 "7157d9cc1f87632b98e88b9c55092db805188d35e6332fed009e316619ede52b"
+  url "https://files.pythonhosted.org/packages/af/14/5055342e4a24e973f37f222285701de8a1a0c4cc66f60c103a3ac9d0b02b/podclipper-0.1.3.tar.gz"
+  sha256 "7584ba25fb626e80815320d4a5f87a52936755d8515296520987a83ec966b5ec"
   license "AGPL-3.0-only"
 
   preserve_rpath
@@ -364,8 +364,8 @@ class Podclipper < Formula
   end
 
   resource "podclipper" do
-    url "https://files.pythonhosted.org/packages/83/7f/d0661217f1ca4b9e0cd7c3e3b3409ca32b21381c708bfde44fd4a392e796/podclipper-0.1.2-py3-none-any.whl", using: :nounzip
-    sha256 "5b0c30dca3259df7563b89826e1f5315ec7679e86f025ae473c5c66cec58fa87"
+    url "https://files.pythonhosted.org/packages/fc/91/e9034a791a803e397a3e127f2812ffa4f395c95fa759632f046933435348/podclipper-0.1.3-py3-none-any.whl", using: :nounzip
+    sha256 "ee7684affc4f16a9e28985eeeee48e2ab06c2621287989877cce2e792276f1d4"
   end
 
   resource "polars" do
@@ -651,7 +651,7 @@ class Podclipper < Formula
       opencv-python==5.0.0.93 --hash=sha256:198a75138241810206a17c829dbcc40a7cb1841cda538ca86cbbfc6c7d95f898
       packaging==26.3 --hash=sha256:d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c
       pillow==12.3.0 --hash=sha256:ffd0c5368496f41b0944be820fcb7a838aa6e623d250b01acf2643939c3f99d7
-      podclipper==0.1.2 --hash=sha256:5b0c30dca3259df7563b89826e1f5315ec7679e86f025ae473c5c66cec58fa87
+      podclipper==0.1.3 --hash=sha256:ee7684affc4f16a9e28985eeeee48e2ab06c2621287989877cce2e792276f1d4
       polars==2.0.0 --hash=sha256:35d62f3541b7a6d4c360a2e2f07fccc0c2bcbd33b0ea51c83a25417a47a3f3ad
       polars-runtime-32==2.0.0 --hash=sha256:7012d8a0201bd95638545ce8f256c0efe2c5cab0f806eb043021dddde5a9498b
       propcache==0.5.4 --hash=sha256:87a3caecf8095e48dc72f84bfa42e23a848cf410cc9cc13031fba4869b706a21

@@ -1,5 +1,5 @@
 {
-  "version": "0.1.2",
+  "version": "0.1.3",
   "platform": "macOS 14+ arm64",
   "python": "3.12",
   "wheels": [
@@ -413,9 +413,9 @@
     },
     {
       "name": "podclipper",
-      "version": "0.1.2",
-      "url": "https://files.pythonhosted.org/packages/83/7f/d0661217f1ca4b9e0cd7c3e3b3409ca32b21381c708bfde44fd4a392e796/podclipper-0.1.2-py3-none-any.whl",
-      "sha256": "5b0c30dca3259df7563b89826e1f5315ec7679e86f025ae473c5c66cec58fa87"
+      "version": "0.1.3",
+      "url": "https://files.pythonhosted.org/packages/fc/91/e9034a791a803e397a3e127f2812ffa4f395c95fa759632f046933435348/podclipper-0.1.3-py3-none-any.whl",
+      "sha256": "ee7684affc4f16a9e28985eeeee48e2ab06c2621287989877cce2e792276f1d4"
     },
     {
       "name": "polars",

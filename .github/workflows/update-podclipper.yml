@@ -1,0 +1,42 @@
+name: Update PodClipper
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "PyPI version, for example 0.1.1 (blank means latest)"
+        required: false
+        type: string
+  schedule:
+    - cron: "23 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-podclipper
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Resolve the latest release and generate the formula
+        env:
+          RELEASE_VERSION: ${{ inputs.version }}
+        run: python scripts/update_formula.py --version "$RELEASE_VERSION" --if-new
+      - name: Commit updated formula
+        run: |
+          if git diff --quiet -- Formula/podclipper.rb locks; then
+            echo "Already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Formula/podclipper.rb locks/macos-arm64-python312.json
+          git commit -m "Update PodClipper formula from PyPI"
+          git push

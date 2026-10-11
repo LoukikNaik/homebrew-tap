@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "platform": "macOS 14+ arm64",
   "python": "3.12",
   "wheels": [
@@ -413,9 +413,9 @@
     },
     {
       "name": "podclipper",
-      "version": "0.1.1",
-      "url": "https://files.pythonhosted.org/packages/c9/d2/d6a29cc7b363bdb449e66c32fca92c571b049a98fe846948a597f0cec787/podclipper-0.1.1-py3-none-any.whl",
-      "sha256": "f016540e58236ef3a2781a0f77e26de3b0b4d22dc7cc10429901508199ec507e"
+      "version": "0.1.2",
+      "url": "https://files.pythonhosted.org/packages/83/7f/d0661217f1ca4b9e0cd7c3e3b3409ca32b21381c708bfde44fd4a392e796/podclipper-0.1.2-py3-none-any.whl",
+      "sha256": "5b0c30dca3259df7563b89826e1f5315ec7679e86f025ae473c5c66cec58fa87"
     },
     {
       "name": "polars",
@@ -455,15 +455,15 @@
     },
     {
       "name": "pydantic",
-      "version": "2.14.0",
-      "url": "https://files.pythonhosted.org/packages/2d/eb/9146591cc819d040475bf7f2be786710c7f7eb8083693bf859728da2ca9c/pydantic-2.14.0-py3-none-any.whl",
-      "sha256": "15fab1bea6f1dc5003b54fc2ecab230c1fd1dbade2acd4addc52d81e32416d4b"
+      "version": "2.14.1",
+      "url": "https://files.pythonhosted.org/packages/35/ea/a56b9fe5066f3537b7882f77e9c5dfb26d8c2eefdaed9b5fc73d57b4dc22/pydantic-2.14.1-py3-none-any.whl",
+      "sha256": "9195d967ec791692a04438115466764fb8b9a27b31f14a760437694f40d6b454"
     },
     {
       "name": "pydantic-core",
-      "version": "2.50.0",
-      "url": "https://files.pythonhosted.org/packages/ef/7d/0a2f829e3e1d809393faab907e3d9307245cd6043ebf54fad439f72f0003/pydantic_core-2.50.0-cp312-cp312-macosx_11_0_arm64.whl",
-      "sha256": "0abe1b44d361b948404b6b2ed80be2583e0077340572e071afa6e0eda4e1de30"
+      "version": "2.50.1",
+      "url": "https://files.pythonhosted.org/packages/db/a3/f8b1b39349c33037c73d7a1b794c9c29d8f07d5bd2b74399c1375a529cc6/pydantic_core-2.50.1-cp312-cp312-macosx_11_0_arm64.whl",
+      "sha256": "e8e1d6ce820aa23317e8209a86bd65a540973c12dc7552b48a4f6c8e9926815e"
     },
     {
       "name": "pydantic-settings",

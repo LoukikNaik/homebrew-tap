@@ -5,8 +5,8 @@ class Podclipper < Formula
 
   desc "Turn podcast videos into vertical reels with captions"
   homepage "https://github.com/LoukikNaik/PodClipper"
-  url "https://files.pythonhosted.org/packages/d7/7a/3c581307b84312664d9c4dffb642a740d52daf5eee680d39918207b5bcfb/podclipper-0.1.1.tar.gz"
-  sha256 "c347e3da5867651f684b7260fba2a76a15ed4e13f380c755c8d9b99dc1afa8c0"
+  url "https://files.pythonhosted.org/packages/4a/49/213298ef29d3946fff27ad18ee772f0fb5fd3cb6be22f09e1277c54aafd0/podclipper-0.1.2.tar.gz"
+  sha256 "7157d9cc1f87632b98e88b9c55092db805188d35e6332fed009e316619ede52b"
   license "AGPL-3.0-only"
 
   preserve_rpath
@@ -364,8 +364,8 @@ class Podclipper < Formula
   end
 
   resource "podclipper" do
-    url "https://files.pythonhosted.org/packages/c9/d2/d6a29cc7b363bdb449e66c32fca92c571b049a98fe846948a597f0cec787/podclipper-0.1.1-py3-none-any.whl", using: :nounzip
-    sha256 "f016540e58236ef3a2781a0f77e26de3b0b4d22dc7cc10429901508199ec507e"
+    url "https://files.pythonhosted.org/packages/83/7f/d0661217f1ca4b9e0cd7c3e3b3409ca32b21381c708bfde44fd4a392e796/podclipper-0.1.2-py3-none-any.whl", using: :nounzip
+    sha256 "5b0c30dca3259df7563b89826e1f5315ec7679e86f025ae473c5c66cec58fa87"
   end
 
   resource "polars" do
@@ -399,13 +399,13 @@ class Podclipper < Formula
   end
 
   resource "pydantic" do
-    url "https://files.pythonhosted.org/packages/2d/eb/9146591cc819d040475bf7f2be786710c7f7eb8083693bf859728da2ca9c/pydantic-2.14.0-py3-none-any.whl", using: :nounzip
-    sha256 "15fab1bea6f1dc5003b54fc2ecab230c1fd1dbade2acd4addc52d81e32416d4b"
+    url "https://files.pythonhosted.org/packages/35/ea/a56b9fe5066f3537b7882f77e9c5dfb26d8c2eefdaed9b5fc73d57b4dc22/pydantic-2.14.1-py3-none-any.whl", using: :nounzip
+    sha256 "9195d967ec791692a04438115466764fb8b9a27b31f14a760437694f40d6b454"
   end
 
   resource "pydantic-core" do
-    url "https://files.pythonhosted.org/packages/ef/7d/0a2f829e3e1d809393faab907e3d9307245cd6043ebf54fad439f72f0003/pydantic_core-2.50.0-cp312-cp312-macosx_11_0_arm64.whl", using: :nounzip
-    sha256 "0abe1b44d361b948404b6b2ed80be2583e0077340572e071afa6e0eda4e1de30"
+    url "https://files.pythonhosted.org/packages/db/a3/f8b1b39349c33037c73d7a1b794c9c29d8f07d5bd2b74399c1375a529cc6/pydantic_core-2.50.1-cp312-cp312-macosx_11_0_arm64.whl", using: :nounzip
+    sha256 "e8e1d6ce820aa23317e8209a86bd65a540973c12dc7552b48a4f6c8e9926815e"
   end
 
   resource "pydantic-settings" do
@@ -651,15 +651,15 @@ class Podclipper < Formula
       opencv-python==5.0.0.93 --hash=sha256:198a75138241810206a17c829dbcc40a7cb1841cda538ca86cbbfc6c7d95f898
       packaging==26.3 --hash=sha256:d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c
       pillow==12.3.0 --hash=sha256:ffd0c5368496f41b0944be820fcb7a838aa6e623d250b01acf2643939c3f99d7
-      podclipper==0.1.1 --hash=sha256:f016540e58236ef3a2781a0f77e26de3b0b4d22dc7cc10429901508199ec507e
+      podclipper==0.1.2 --hash=sha256:5b0c30dca3259df7563b89826e1f5315ec7679e86f025ae473c5c66cec58fa87
       polars==2.0.0 --hash=sha256:35d62f3541b7a6d4c360a2e2f07fccc0c2bcbd33b0ea51c83a25417a47a3f3ad
       polars-runtime-32==2.0.0 --hash=sha256:7012d8a0201bd95638545ce8f256c0efe2c5cab0f806eb043021dddde5a9498b
       propcache==0.5.4 --hash=sha256:87a3caecf8095e48dc72f84bfa42e23a848cf410cc9cc13031fba4869b706a21
       protobuf==7.36.2 --hash=sha256:cbc70b17ee27e28894c7fee8bb04be1abead49e936bc70eb60052531eee2079e
       psutil==7.2.2 --hash=sha256:1a7b04c10f32cc88ab39cbf606e117fd74721c831c98a27dc04578deb0c16979
       pycparser==3.11 --hash=sha256:51d5a8ba2be0bbe440b99d2112604c95bbbc3c2748a64260186c541e1729cd80
-      pydantic==2.14.0 --hash=sha256:15fab1bea6f1dc5003b54fc2ecab230c1fd1dbade2acd4addc52d81e32416d4b
-      pydantic-core==2.50.0 --hash=sha256:0abe1b44d361b948404b6b2ed80be2583e0077340572e071afa6e0eda4e1de30
+      pydantic==2.14.1 --hash=sha256:9195d967ec791692a04438115466764fb8b9a27b31f14a760437694f40d6b454
+      pydantic-core==2.50.1 --hash=sha256:e8e1d6ce820aa23317e8209a86bd65a540973c12dc7552b48a4f6c8e9926815e
       pydantic-settings==2.15.0 --hash=sha256:0ba092c291c94baceb5eff768aa0d56400a457585bc0175925a5a5510303da42
       pygments==2.21.0 --hash=sha256:2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9
       pyparsing==3.3.3 --hash=sha256:ece8c00a69cf01b45d0b1dedabb469c90d8caf996d4fda40f147627a122849a4

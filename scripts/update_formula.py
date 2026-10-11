@@ -86,6 +86,8 @@ class Podclipper < Formula
   sha256 "{source["digests"]["sha256"]}"
   license "AGPL-3.0-only"
 
+  preserve_rpath
+
   depends_on arch: :arm64
   depends_on macos: :sonoma
   depends_on "ffmpeg"

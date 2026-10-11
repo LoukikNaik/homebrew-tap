@@ -1,0 +1,40 @@
+name: Install PodClipper
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - Formula/**
+      - .github/workflows/install-podclipper.yml
+
+permissions:
+  contents: read
+
+jobs:
+  install:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install with Homebrew
+        env:
+          HOMEBREW_NO_AUTO_UPDATE: "1"
+          HOMEBREW_NO_INSTALL_CLEANUP: "1"
+        run: |
+          test "$(uname -m)" = arm64
+          test ! -d "$(brew --cellar)/podclipper"
+          brew tap loukiknaik/tap "$GITHUB_WORKSPACE"
+          brew install loukiknaik/tap/podclipper
+      - name: Check installed command and dependencies
+        run: |
+          podclipper --help
+          ffmpeg -version
+          ffprobe -version
+          "$(brew --prefix podclipper)/libexec/bin/python" -c "import faster_whisper, cv2, mediapipe, ultralytics, litellm; from importlib.metadata import version; print('PodClipper', version('podclipper'))"
+          "$(brew --prefix python@3.12)/bin/python3.12" -m pip --python="$(brew --prefix podclipper)/libexec/bin/python" check
+      - name: Check first-time setup without an API key
+        run: |
+          mkdir "$RUNNER_TEMP/podclipper-onboarding"
+          cd "$RUNNER_TEMP/podclipper-onboarding"
+          podclipper init
+          test -f .env
+          test -f podclipper.yaml
